@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'thor'
+require_relative 'services/create_brew'
 
 module CoffeeCli
   class CLI < Thor
@@ -17,7 +18,7 @@ module CoffeeCli
         mililiters: options[:water_mls]
       }
 
-      CoffeeCli::RegisterBrew.call(brew_info)
+      CoffeeCli::Services::CreateBrew.call(brew_info)
     end
   end
 end
