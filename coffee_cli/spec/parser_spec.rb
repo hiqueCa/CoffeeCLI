@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'coffee_cli'
+
 RSpec.describe CoffeeCli::Parser do
   let(:coffee_name) { 'Test Coffee' }
   let(:producer_name) { 'Test Producer Name' }
