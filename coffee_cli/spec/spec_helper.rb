@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "coffee_cli"
-require 'coffee_cli/parser'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

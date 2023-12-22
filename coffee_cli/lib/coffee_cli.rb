@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "coffee_cli/parser"
+require_relative "coffee_cli/cli"
 
-module CoffeeCli
-end
+CoffeeCli::CLI.start(ARGV)
